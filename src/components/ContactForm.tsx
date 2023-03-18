@@ -29,15 +29,15 @@ function ContactForm(props: ContactFormProps) {
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div>
                     <label htmlFor="make">Make</label>
-                    <Input {...register('make')} name='make' placeholder='Make'/>
+                    <Input {...register('make')} name='make' placeholder='Make' type="text"/>
                 </div>
                 <div>
                     <label htmlFor="model">Model</label>
-                    <Input {...register('model')} name='model' placeholder='Model'/>
+                    <Input {...register('model')} name='model' placeholder='Model' type="text"/>
                 </div>
                 <div>
                     <label htmlFor="year">Year</label>
-                    <Input {...register('year')} name='year' placeholder='Year'/>
+                    <Input {...register('year', { valueAsNumber: true })} name='year' placeholder='Year' type="number"/>
                 </div>
                 <div className="flex p-1">
                     <Button className="flex justify-start m-3 bg-slate-300 p-2 rounded hover:bg-slate-800 text-white">

@@ -4,6 +4,7 @@ import { TextField } from '@mui/material'
 interface inputType {
     name: string,
     placeholder: string
+    type: string
 }
 const Input = forwardRef((props: inputType, ref) => {
   return (
@@ -12,7 +13,6 @@ const Input = forwardRef((props: inputType, ref) => {
         margin="normal"
         inputRef={ref}
         fullWidth
-        type="text"
         {...props}
     />
   )
