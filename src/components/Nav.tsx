@@ -10,8 +10,8 @@ function Nav() {
     }
 
     return (
-        <nav className='flex flex-row items-center justify-between flex-wrap w-full fixed p-3 bg-black text-white'>
-        <div className='mr-3 text-xl'>
+        <nav className='flex flex-row items-center justify-between flex-wrap w-full fixed p-3 bg-black text-white z-10'>
+        <div className='mr-3 text-2xl h-8'>
             Car Inventory
         </div>
         <div>
